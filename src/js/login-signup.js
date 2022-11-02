@@ -5,8 +5,14 @@ let SaritoryDB = low(adapter);
 //db init
 SaritoryDB.defaults({ 
   users: [], category: [], products: [], transactions: [], currLogin: [] }).write();
+<<<<<<< HEAD
 const baseurl = window.location.href;
 // const baseurl = window.location.origin;
+=======
+
+// const baseurl = window.location.origin;
+const baseurl = `${window.location.origin}/saritory`;
+>>>>>>> 67a4a730d48ec858f6645c7bc743ccfb5b21c062
 console.log(baseurl);
 console.log(window.location.href);
 
@@ -102,8 +108,12 @@ loginForm.addEventListener('submit', e => {
           showConfirmButton: false,
           timer: 2000
       }).then((result) => {
+<<<<<<< HEAD
           // location.replace(`${baseurl}main.html`);
           location.replace(`http://127.0.0.1:5503/src/pages/dashboard.html`);
+=======
+          location.replace(`${baseurl}/src/pages/dashboard.html`);
+>>>>>>> 67a4a730d48ec858f6645c7bc743ccfb5b21c062
       })
   }
 });
@@ -250,7 +260,11 @@ function my_code() {
           showConfirmButton: false,
           timer: 3000
       }).then((result) => {
+<<<<<<< HEAD
           location.replace(`http://127.0.0.1:5503/src/pages/dashboard.html`);
+=======
+          location.replace(`${baseurl}/src/pages/dashboard.html`);
+>>>>>>> 67a4a730d48ec858f6645c7bc743ccfb5b21c062
       })
   }
 }

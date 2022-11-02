@@ -4,9 +4,271 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
 	<title>DASHBOARD</title>
 </head>
 <body>
 	<h1>DASHBOARD HERE</h1>
+=======
+	<link rel="shortcut icon" href="../images/SARITORY2.png" type="image/x-icon" />
+	<link rel="stylesheet" href="../styles/css/main.min.css">
+
+	<!-- Popper.JS -->
+	<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+	integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+	crossorigin="anonymous"
+	></script>
+	<!-- Bootstrap JS -->
+
+	<!-- <link
+	rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+	integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+	crossorigin="anonymous"
+	/>
+	<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+	integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+	crossorigin="anonymous"
+	></script> -->
+
+	<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+		crossorigin="anonymous"
+	/>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+		crossorigin="anonymous"
+	></script>
+	
+
+
+	<!-- Font Awesome JS -->
+	<script
+	defer
+	src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+	integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+	crossorigin="anonymous"
+	></script>
+	<script
+	defer
+	src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+	integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+	crossorigin="anonymous"
+	></script>
+
+	<!-- jQuery CDN - Slim version (=without AJAX) -->
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"
+	></script>
+
+	<script src="https://kit.fontawesome.com/562501533e.js" crossorigin="anonymous"></script>
+
+	<title>DASHBOARD</title>
+	
+</head>
+<body id="dashboard">
+	<div class="wrapper">
+		<!-- Sidebar  -->
+		<nav id="sidebar">
+		  <div class="sidebar-header">
+			<a class="sidebar-brand" href=""
+			  ><img src="../images/SARITORY_with_text_v2.png" width="200" alt=""
+			/></a>
+			<!--  <h3>Bootstrap Sidebar</h3> -->
+		  </div>
+  
+		  <ul class="list-unstyled components">
+			<span id="storeName">Name of Store</span>
+			<li>
+				<a href="#">Tindera Area</a>
+			</li>
+			<li class="sideMenuDropdown">
+			  <a
+			  	data-bs-toggle="collapse"
+				href="#inventorySubmenu"
+				aria-expanded="false"
+				arial-controls="inventorySubmenu"
+				class="dropdown-toggle"
+				>Manage Items</a
+			  >
+			  <ul class="collapse list-unstyled" id="inventorySubmenu">
+				<li>
+				  <a href="#">Items Management</a>
+				</li>
+				<li>
+				  <a href="#">Top Products</a>
+				</li>
+				<li>
+				  <a href="#">Expiring Items</a>
+				</li>
+			  </ul>
+			</li>
+			<li class="sideMenuDropdown">
+			  <a
+			  	data-bs-toggle="collapse"
+				href="#salesSubmenu"
+				aria-expanded="false"
+				arial-controls="salesSubmenu"
+				class="dropdown-toggle"
+				>Earnings</a
+			  >
+			  <ul class="collapse list-unstyled" id="salesSubmenu">
+				<li>
+				  <a href="#">Todays Transaction</a>
+				</li>
+				<li>
+				  <a href="#">Monthly Earnings</a>
+				</li>
+			  </ul>
+			</li>
+		  </ul>
+  
+		  <!-- <ul class="list-unstyled CTAs">
+			<li>
+			  <a href="" class="otherlink1">link1 </a>
+			</li>
+			<li>
+			  <a href="" class="otherlink2">link 2</a>
+			</li>
+		  </ul> -->
+		</nav>
+  
+		<!-- Page Content  -->
+		<div id="content">
+		  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+			  <button type="button" id="sidebarCollapse" class="btn btn-info">
+				<i class="fas fa-align-left"></i>
+				<!--  <span>Toggle Sidebar</span> -->
+			  </button>
+			  <button
+				class="btn d-inline-block d-lg-none ml-auto burgerMenu"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#topNavbar"
+				aria-controls="topNavbar"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			  >
+				<i class="fas fa-align-justify"></i>
+			  </button>
+  
+			  <div class="collapse navbar-collapse" id="topNavbar">
+				<ul class="nav navbar-nav ml-auto tabmobile-center me-lg-3">
+				  <li class="nav-item dropdown" id="usernameArea">
+					<a
+					  class="nav-link dropdown-toggle"
+					  href="#"
+					  role="button"
+					  data-bs-toggle="dropdown"
+					  id="username"
+					  >USERNAME
+					  <span><img src="../images/SARITORY.png" width="50" alt="" /></span>
+					  </a>
+					  
+					<ul class="dropdown-menu tabmobile-center" id="topNavbar__dropdown">
+					  <li><a class="dropdown-item" href="#">Profile</a></li>
+					  <li><a class="dropdown-item" href="#">Settings</a></li>
+					  <hr />
+					  <li id="logout"><a class="dropdown-item" href="#">Logout</a></li>
+					</ul>
+				  </li>
+  
+				  <!--
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Page</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Page</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Page</a>
+				  </li> -->
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+  
+		  <h2>SOMETHING HERE</h2>
+		  <p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+			minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+			aliquip ex ea commodo consequat. Duis aute irure dolor in
+			reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+			culpa qui officia deserunt mollit anim id est laborum.
+		  </p>
+		  <p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+			minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+			aliquip ex ea commodo consequat. Duis aute irure dolor in
+			reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+			culpa qui officia deserunt mollit anim id est laborum.
+		  </p>
+  
+		  <div class="line"></div>
+  
+		  <h2>SOMETHING HERE</h2>
+		  <p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+			minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+			aliquip ex ea commodo consequat. Duis aute irure dolor in
+			reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+			culpa qui officia deserunt mollit anim id est laborum.
+		  </p>
+  
+		  <div class="line"></div>
+  
+		  <h2>Lorem Ipsum Dolor</h2>
+		  <p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+			minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+			aliquip ex ea commodo consequat. Duis aute irure dolor in
+			reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+			culpa qui officia deserunt mollit anim id est laborum.
+		  </p>
+  
+		  <div class="line"></div>
+  
+		  <h3>Lorem Ipsum Dolor</h3>
+		  <p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+			minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+			aliquip ex ea commodo consequat. Duis aute irure dolor in
+			reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+			culpa qui officia deserunt mollit anim id est laborum.
+		  </p>
+		</div>
+	</div>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/lodash@4/lodash.min.js"></script>
+    <script src="https://unpkg.com/lowdb@0.17/dist/low.min.js"></script>
+    <script src="https://unpkg.com/lowdb@0.17/dist/LocalStorage.min.js"></script>
+    <!-- SWEET ALERT 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<script src="../js/dashboard.js"></script>
+>>>>>>> 67a4a730d48ec858f6645c7bc743ccfb5b21c062
 </body>
 </html>

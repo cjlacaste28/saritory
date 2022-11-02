@@ -96,7 +96,7 @@ a[data-toggle="collapse"] {
     transform: translateY(-50%);
 }
 
-#dashboard ul ul a {                           /*dropdown list*/
+.dashboard ul ul a {                           /*dropdown list*/
     font-size: 0.9em !important;
     background: #f5f5f4;
     color: #0062be;
@@ -152,6 +152,45 @@ a.otherlink2:hover {
 	background-color: #f5f5f4;
 }
 
+#sideMenuDashboard a::before{
+    font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f624";
+    margin-right: 10px;
+}
+
+#sideMenuSellerArea a::before{
+    font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f54e";
+    margin-right: 10px;
+}
+
+#sideMenuManageItems .beforeIcon::before{
+    font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\e4c7";
+    margin-right: 10px; 
+}
+
+#sideMenuEarnings .beforeIcon::before{
+    font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f81d";
+    margin-right: 10px; 
+}
+
+.sideMenuDropdown .dropdown-toggle::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f0d7";
+	float: right;
+}
+
+.sideMenuDropdown .dropdown-toggle::after{
+    display: none !important;
+}
+
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -189,14 +228,9 @@ a.otherlink2:hover {
 	color: white !important;
 }
 
-.sideMenuDropdown .dropdown-toggle::before {
-	font-family: "Font Awesome 5 Free";
-	font-weight: 900;
-	content: "\f0d7";
-	float: right;
-  }
 
-#dashboard .navbar-expand-lg .navbar-collapse {
+
+.dashboard .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
 }
 

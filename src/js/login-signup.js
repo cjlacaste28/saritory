@@ -173,7 +173,10 @@ function checkInputsRegister() {
       return {
           success: true,
           msg: "Account successfully created",
-          data: { username: usernameValue, password: passwordValue, store: storeValue }
+          data: { username: usernameValue, 
+            password: passwordValue, 
+            storeID: Math.floor(Math.random() * Date.now()), 
+            storeName: storeValue }
       }
   } else {
       return {

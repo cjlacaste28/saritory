@@ -33,7 +33,7 @@
 	></script>
 	<!-- FONTAWESOME -->
 	<script src="https://kit.fontawesome.com/562501533e.js" crossorigin="anonymous"></script>
-	<title>ITEM MANAGEMENT</title>
+	<title>CATEGORY MANAGEMENT</title>
 </head>
 
 <body class="dashboard">
@@ -166,46 +166,95 @@
 			</div>
 		  </nav>
   
-		  <p class="ms-3 breadcrumbs">Manage Items > Items Management</p>
-
-		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal" data-bs-whatever="@mdo">ADD PRODUCT</button>
+		<p class="ms-3 breadcrumbs">Manage Items > Category Management</p>
 
 
-		<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-			<div class="modal-header">
-				<h1 class="modal-title fs-5" id="addModalLabel">ADD PRODUCT</h1>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-			<div class="modal-body">
-				<form>
-				<div class="mb-3">
-					<label for="productNameInput" class="col-form-label">Product Name:</label>
-					<input type="text" class="form-control" id="productNameInput">
+		<div class="container">
+			<!-- ADD BUTTON -->
+			<div class="addCategory__container mb-3 d-flex justify-content-end">
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" 
+				data-bs-target="#addCategoryModal" id="addCategoryBtn"><i class="fa-solid fa-plus me-2"></i>ADD CATEGORY</button>
+
+				<div class="modal fade" id="addCategoryModal" tabindex="-1" aria-labelledby="addCategoryModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="addCategoryModalLabel">ADD CATEGORY</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<form id="categoryForm">
+								<div class="mb-3">
+									<label for="categoryNameInput" class="col-form-label">Category Name:</label>
+									<input type="text" class="form-control" id="categoryNameInput">
+									<div class="invalid-feedback" id="category-error">
+										Category must not be empty.
+									</div>
+								</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="categoryCancelButton">CANCEL</button>
+								<button type="button" class="btn btn-primary" id="categorySaveButton">SAVE</button>
+								<button type="button" class="btn btn-primary" id="categoryUpdateButton">UPDATE</button>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="mb-3">
-					<label for="productPriceInput" class="col-form-label">Price:</label>
-					<input type="text" class="form-control" id="productPriceInput">
-				</div>
-				<div class="mb-3">
-					<label for="productQuantitynput" class="col-form-label">Quantity:</label>
-					<input type="text" class="form-control" id="productQuantitynput">
-				</div>
-				<div class="mb-3">
-					<label for="productExpirationInput" class="col-form-label">Expiration:</label>
-					<input type="date" class="form-control" id="productExpirationInput">
-				</div>
-				</form>
 			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCEL</button>
-				<button type="button" class="btn btn-primary">SAVE</button>
+
+			<!-- TABLE -->
+			<div class="row">
+			  <div class="col-12">
+				<table class="table table-bordered">
+				  <thead class="bg-primary text-white">
+					<tr>
+					  <th scope="col">Category Name</th>
+					  <th scope="col" class="text-center">Actions</th>
+					</tr>
+				  </thead>
+				  <tbody id="category__tbody">
+					<!-- <tr>
+					  <td>Beverages</td>
+					  <td class="d-flex justify-content-center ">
+						<button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
+						<button type="button" class="btn btn-success mx-1"><i class="fas fa-edit"></i></button>
+					  	<button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Medical Products</td>
+					  <td class="d-flex justify-content-center ">
+						<button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
+						<button type="button" class="btn btn-success mx-1"><i class="fas fa-edit"></i></button>
+					  	<button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Bootstrap Flexbox Tutorial and Examples</td>
+					  <td class="d-flex justify-content-center ">
+						<button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
+						<button type="button" class="btn btn-success mx-1"><i class="fas fa-edit"></i></button>
+					  	<button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+					  </td>
+					</tr>-->
+					<tr id="empty-category__display">
+						<td colspan="2" class="py-5">
+							<div class="empty-list"></div>
+								<i class="fas fa-inbox text-black-50 d-block text-center empty-list__icon"></i>
+								<p class="empty-list-desc d-block text-center text-black-50 empty-list__description">Category List is empty</p>
+							</div>
+						</td>
+					</tr>
+					
+				  </tbody>
+				</table>
+			  </div>
 			</div>
-			</div>
-		</div>
-		</div>
-	</div>
+		  </div>
+
+	</div> <!--  END OF WRAPPER -->
+	
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -220,6 +269,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/2.0.0-alpha0/date_fns.js"></script> -->
 	<script src="https://cdn.jsdelivr.net/npm/luxon@3.1.0/build/global/luxon.min.js"></script>
-	<script src="../js/dashboard.js"></script>
+	<script src="../js/category-management.js"></script>
 </body>
 </html>

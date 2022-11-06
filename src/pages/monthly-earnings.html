@@ -14,19 +14,6 @@
 	crossorigin="anonymous"
 	></script>
 	<!-- Bootstrap JS -->
-
-	<!-- <link
-	rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-	integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-	crossorigin="anonymous"
-	/>
-	<script
-	src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-	integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-	crossorigin="anonymous"
-	></script> -->
-
 	<link
 		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
 		rel="stylesheet"
@@ -39,29 +26,13 @@
 		crossorigin="anonymous"
 	></script>
 	
-
-
-	<!-- Font Awesome JS -->
-	<!-- <script
-	defer
-	src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-	integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-	crossorigin="anonymous"
-	></script>
-	<script
-	defer
-	src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-	integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-	crossorigin="anonymous"
-	></script> -->
-
 	<!-- jQuery CDN - Slim version (=without AJAX) -->
 	<script
 	src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 	crossorigin="anonymous"
 	></script>
-
+	<!-- Font Awesome JS -->
 	<script src="https://kit.fontawesome.com/562501533e.js" crossorigin="anonymous"></script>
 
 	<title>MONTHLY EARNINGS</title>
@@ -71,72 +42,75 @@
 	<div class="wrapper">
 		<!-- Sidebar  -->
 		<nav id="sidebar">
-		  <div class="sidebar-header">
-			<a class="sidebar-brand" href=""
-			  ><img src="../images/SARITORY_with_text_v2.png" width="200" alt=""
-			/></a>
-			<!--  <h3>Bootstrap Sidebar</h3> -->
-		  </div>
-  
-		  <ul class="list-unstyled components">
-			<span id="storeName">Name of Store</span>
-			<li id="sideMenuDashboard">
-				<a href="dashboard.html">Dashboard</a>
-			</li>
-			<hr>
-			<li id="sideMenuSellerArea">
-				<a href="seller-area.html">Seller Area</a>
-			</li>
-			<li class="sideMenuDropdown" id="sideMenuManageItems">
-			  <a
-			  	data-bs-toggle="collapse"
-				href="#inventorySubmenu"
-				aria-expanded="false"
-				arial-controls="inventorySubmenu"
-				class="dropdown-toggle"
-				><span class="beforeIcon"></span>Manage Items</a
-			  >
-			  <ul class="collapse list-unstyled" id="inventorySubmenu">
-				<li>
-				  <a href="item-management.html">Items Management</a>
-				</li>
-				<li>
-				  <a href="top-products.html">Top Products</a>
-				</li>
-				<li>
-				  <a href="expiring-items.html">Expiring Items</a>
-				</li>
-			  </ul>
-			</li>
-			<li class="sideMenuDropdown" id="sideMenuEarnings">
-			  <a
-			  	data-bs-toggle="collapse"
-				href="#salesSubmenu"
-				aria-expanded="false"
-				arial-controls="salesSubmenu"
-				class="dropdown-toggle"
-				><span class="beforeIcon"></span>Earnings</a
-			  >
-			  <ul class="collapse list-unstyled" id="salesSubmenu">
-				<li>
-				  <a href="transaction.html">Todays Transaction</a>
-				</li>
-				<li>
-				  <a href="monthly-earnings.html">Monthly Earnings</a>
-				</li>
-			  </ul>
-			</li>
-		  </ul>
-  
-		  <!-- <ul class="list-unstyled CTAs">
-			<li>
-			  <a href="" class="otherlink1">link1 </a>
-			</li>
-			<li>
-			  <a href="" class="otherlink2">link 2</a>
-			</li>
-		  </ul> -->
-		</nav>
+			<div class="sidebar-header">
+			  <a class="sidebar-brand" href=""
+				><img src="../images/SARITORY_with_text_v2.png" width="200" alt=""
+			  /></a>
+			  <!--  <h3>Bootstrap Sidebar</h3> -->
+			</div>
+	
+			<ul class="list-unstyled components">
+			  <span id="storeName">Name of Store</span>
+			  <li id="sideMenuDashboard">
+				  <a href="dashboard.html">Dashboard</a>
+			  </li>
+			  <hr>
+			  <li id="sideMenuSellerArea">
+				  <a href="seller-area.html">Seller Area</a>
+			  </li>
+			  <li class="sideMenuDropdown" id="sideMenuManageItems">
+				<a
+					data-bs-toggle="collapse"
+				  href="#inventorySubmenu"
+				  aria-expanded="false"
+				  arial-controls="inventorySubmenu"
+				  class="dropdown-toggle"
+				  ><span class="beforeIcon"></span>Manage Items</a
+				>
+				<ul class="collapse list-unstyled" id="inventorySubmenu">
+				  <li>
+					  <a href="category-management.html">Category Management</a>
+				  </li>
+				  <li>
+					<a href="item-management.html">Items Management</a>
+				  </li>
+				  <li>
+					<a href="top-products.html">Top Products</a>
+				  </li>
+				  <li>
+					<a href="expiring-items.html">Expiring Items</a>
+				  </li>
+				</ul>
+			  </li>
+			  <li class="sideMenuDropdown" id="sideMenuEarnings">
+				<a
+					data-bs-toggle="collapse"
+				  href="#salesSubmenu"
+				  aria-expanded="false"
+				  arial-controls="salesSubmenu"
+				  class="dropdown-toggle"
+				  ><span class="beforeIcon"></span>Earnings</a
+				>
+				<ul class="collapse list-unstyled" id="salesSubmenu">
+				  <li>
+					<a href="transaction.html">Todays Transaction</a>
+				  </li>
+				  <li>
+					<a href="monthly-earnings.html">Monthly Earnings</a>
+				  </li>
+				</ul>
+			  </li>
+			</ul>
+	
+			<!-- <ul class="list-unstyled CTAs">
+			  <li>
+				<a href="" class="otherlink1">link1 </a>
+			  </li>
+			  <li>
+				<a href="" class="otherlink2">link 2</a>
+			  </li>
+			</ul> -->
+		  </nav>
   
 		<!-- Page Content  -->
 		<div id="content">
@@ -194,7 +168,7 @@
 			</div>
 		  </nav>
   
-		  <h2>MONTHLY EARNINGS HERE</h2>
+		  <p class="ms-3 breadcrumbs">Sales > Monthly Sales</p>
 	</div>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -208,6 +182,8 @@
     <script src="https://unpkg.com/lowdb@0.17/dist/LocalStorage.min.js"></script>
     <!-- SWEET ALERT 2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/2.0.0-alpha0/date_fns.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/luxon@3.1.0/build/global/luxon.min.js"></script>
 	<script src="../js/dashboard.js"></script>
 </body>
 </html>

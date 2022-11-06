@@ -10,3 +10,20 @@
   input {
 	font-family: "Poppins", sans-serif;
   }
+
+#topNavbar__dropdown[data-bs-popper]{
+	left: unset !important;
+	right: 0px !important;
+}  
+
+.empty-list__icon{
+	font-size: 6.25rem;
+}
+.empty-list__description{
+	font-size: 1.375rem;
+}
+
+.breadcrumbs{
+	color: $primary-light;
+	font-size: 1.25rem;
+}

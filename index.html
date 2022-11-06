@@ -1,17 +1,183 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mini Project 2</title>
-	<link rel="stylesheet" href="./src/styles/css/main.min.css" />
-	<link rel="shortcut icon" href="./src/images/SARITORY2.png" type="image/x-icon">
-</head>
-<body id="landing-page">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 2</title>
+    <link rel="stylesheet" href="./src/styles/css/main.min.css" />
+    <link rel="shortcut icon" href="./src/images/SARITORY2.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-	
-	
-	<script src="./src/js/index.js"></script>
-</body>
-</html>
+  </head>
+  <body id="index">  
+
+  <header>
+            <!-- NAVBAR -->
+          <nav class="navbar navbar-expand-lg navbar-dark fw-bold" style="background-color: #0062BE">
+              <div class="container sticky-top">
+                <a class="navbar-brand" href="#"><img src="./src/images/SARITORY_with_text_v2.png" width="200px"></a>
+                
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+          
+
+                <div class="collapse navbar-collapse text-light text-center" id="navbarText">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active mt-2 " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mt-2 ">
+                      <a class="nav-link " href="#about">About</a>
+                    </li>
+                    <li class="nav-item mt-2 ">
+                      <a class="nav-link" href="#Features">Features</a>
+                    </li>
+                    <li class="nav-item mt-2  ">
+                      <a class="nav-link" href="#Reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="/src/pages/login-signup.html"> <button type="button" class="btn register fw-bold text-nowrap " style=" border: 3px solid;
+                        border-color: #ff9800;
+                        color: white") >REGISTER</button></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="Register" href="/src/pages/login-signup.html"><button type="button" class="btn login fw-bold text-light" style="    background-color: #ff914d;">LOGIN</button></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+  </header>
+
+  <body>
+              <!--CONTAINER-->
+    
+
+                <div class="bg-image sairsari-store-image" style="background-image: url('./src/images/banner-saritory\ 1.png'); background-size: cover; background-position:center; height:100vh">
+                  <h1 class="sarisari-store banner-text text-light fw-bold container" style="padding-top:200px">SARI-SARI STORE <br> INVENTORY MADE EASY<br> <button type="button" class="btn learnmore fw-bold text-light " style=" background-color: #ff914d">LEARN MORE</button></h1>
+                
+
+              </div>
+            </nav>
+    
+
+      <!--ABOUT-->
+      <div class="bg-light" id="about">
+        <div class="text-center text-primary pt-5 fw-bold"><h2>ABOUT SARITORY</h2></div>
+          <div class="container text-start">
+            <div class="row ">
+              <div class=" col-md-6 pt-5 pb-2"><img class="img-fluid"src="./src/images/saritory dashboard 1.png"></div>
+              <div class="  col-md-6 pt-5 mt-5 pb-5"><p>Saritoy's Inventory Management System is the best system in the Philippines as it is designed to catch an array of details of your inventory, sales, item expiration and most sellable item so that you can make the right inventory replenishment decisions quickly. While the system provides an inventory alert, you can prevent any sort of inventory inefficiencies in the shortest possible time. </p></div>
+            </div>
+
+          </div>
+      </div>
+
+    <!-- Features-->
+    <div  style="background-color: #0082FC;">
+      <div class="text-center text-light pt-5 pb-3" id="Features"><h2>FEATURES</h2></div>
+
+
+      <div class="container d-flex justify-content-center ">
+
+        <div class="row p-1">
+        <div class="inventory col pb-3 ">
+          <div class="card" style="width: 18rem;">
+            <img src="./src/images/inventory.png" class="mx-auto d-flex justify-content-center pt-5" alt="inventory">
+            <div class="card-body">
+              <h5 class="card-title pt-1 text-center">Inventory Management</h5>
+              <p class="card-text pt-1" style=" display: -webkit-box;-webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia in beatae itaque aliquam minus, quisquam repellat ea quasi laboriosam, recusandae incidunt cumque facilis nam dicta perferendis a similique ut distinctio?</p>
+            </div>
+          </div>
+      </div>
+
+
+
+      <div class="income col pb-3 ">
+        <div class="card" style="width: 18rem;">
+          <img src="./src/images/price.png"class="mx-auto d-flex justify-content-center pt-5" alt="Income Tracker">
+          <div class="card-body">
+            <h5 class="card-title pt-1 text-center">Income Tracker</h5>
+            <p class="card-text pt-1" style=" display: -webkit-box;-webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia in beatae itaque aliquam minus, quisquam repellat ea quasi laboriosam, recusandae incidunt cumque facilis nam dicta perferendis a similique ut distinctio?</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="expiring col pb-3 ">
+      <div class="card" style="width: 18rem;">
+        <img src="./src/images/warning.png" class="mx-auto d-flex justify-content-center pt-5" alt="Tindera Account">
+        <div class="card-body">
+          <h5 class="card-title pt-1 text-center">Expiring Items</h5>
+          <p class="card-text pt-1" style=" display: -webkit-box;-webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia in beatae itaque aliquam minus, quisquam repellat ea quasi laboriosam, recusandae incidunt cumque facilis nam dicta perferendis a similique ut distinctio?</p>
+        </div>
+      </div>
+  </div>
+
+  <div class="Tindera col pb-5 ">
+    <div class="card" style="width: 18rem;">
+      <img src="./src/images/people.png" class="mx-auto d-flex justify-content-center pt-5" alt="Tindera Account">
+      <div class="card-body">
+        <h5 class="card-title pt-1 text-center">Tindera Account</h5>
+        <p class="card-text pt-1" style=" display: -webkit-box;-webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia in beatae itaque aliquam minus, quisquam repellat ea quasi laboriosam, recusandae incidunt cumque facilis nam dicta perferendis a similique ut distinctio?</p>
+      </div>
+    </div>
+    </div>
+    </div>
+
+  </div>  
+
+      <!-- Reviews-->
+      <div class="bg-light">
+        <div class="text-center text-primary p-5" id="Reviews"><h2>REVIEWS</h2></div>
+          <div class="container text-start p-5">
+            <div class="row pb-5 ">
+              <div class="col border border-dark mb-2 p-3 mx-4 ">
+                  <h5 class="pb-2">Neptune's Boat</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam exercitationem, vitae sunt, at reiciendis repudiandae accusamus perferendis accusantium possimus enim voluptatem magni nostrum similique ab maxime aliquid laborum culpa ad maiores non, voluptate sapiente commodi modi molestias! Error voluptatum quisquam ut qui delectus veniam debitis, et magni id possimus tempora.</p><br>
+                  <img src="./src/images/star.png"  style="height: 20px;">
+                  <img src="./src/images/star.png"  style="height: 20px;">
+                  <img src="./src/images/star.png"  style="height: 20px;">
+                  <img src="./src/images/star.png"  style="height: 20px;">
+                  <img src="./src/images/star.png"  style="height: 20px;">
+              </div>
+              <div class="col border border-dark mb-2 p-3 mx-4 ">
+                <h5 class="pb-2">Neptune's Boat</h5>
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam exercitationem, vitae sunt, at reiciendis repudiandae accusamus perferendis accusantium possimus enim voluptatem magni nostrum similique ab maxime aliquid laborum culpa ad maiores non, voluptate sapiente commodi modi molestias! Error voluptatum quisquam ut qui delectus veniam debitis, et magni id possimus tempora.</p><br>
+                    <img src="./src/images/star.png"  style="height: 20px;">
+                    <img src="./src/images/star.png"  style="height: 20px;">
+                    <img src="./src/images/star.png"  style="height: 20px;">
+                    <img src="./src/images/star.png"  style="height: 20px;">
+                    <img src="./src/images/star.png"  style="height: 20px;">
+
+            </div>
+
+          </div>
+      </div>
+
+        <!-- CREATE AN ACCOUNT-->
+    <div class="bg-primary ">
+      <div class="text-center text-light pt-5 pb-3 fw-bold container"><h2>Create a free account today!</h2></div>
+      <p class="text-center text-light fw-bold pb-3 container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatibus, voluptas neque recusandae fugiat vel nemo atque praesentium aliquam explicabo</p>
+      <a id="register" href="#" class="d-flex justify-content-center container"><button type="button" class="btn login fw-bold text-light">Register</button></a>
+      <p class="text-center text-light fw-bold pb-5 container">Lorem ipsum dolor sit </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+    <footer>
+
+    <div class="footer container text-start">
+      <div class="row">
+        <div class="col pb-3"><img src="./src/images/SARITORY with text v2 2.png" width="200px"></div>
+        <div class="col text-primary fw-bold pt-3 text-end"><p>© Copyright 2022 SARITORY | All Rights Reserved</p></div>
+      </div>
+
+    </footer>
+
+    </div>
+
+    
+    <script src="./src/js/index.js "></script>
+  </body>
+  </html>

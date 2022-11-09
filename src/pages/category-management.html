@@ -112,147 +112,121 @@
   
 		<!-- Page Content  -->
 		<div id="content">
-		  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
-			  <button type="button" id="sidebarCollapse" class="btn btn-info">
-				<i class="fas fa-align-left"></i>
-				<!--  <span>Toggle Sidebar</span> -->
-			  </button>
-			  <button
-				class="btn d-inline-block d-lg-none ml-auto burgerMenu"
-				type="button"
-				data-bs-toggle="collapse"
-				data-bs-target="#topNavbar"
-				aria-controls="topNavbar"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			  >
-				<i class="fas fa-align-justify"></i>
-			  </button>
+		  	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+					<button type="button" id="sidebarCollapse" class="btn btn-info">
+						<i class="fas fa-align-left"></i>
+					</button>
+					<button
+						class="btn d-inline-block d-lg-none ml-auto burgerMenu"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#topNavbar"
+						aria-controls="topNavbar"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<i class="fas fa-align-justify"></i>
+					</button>
+		
+					<div class="collapse navbar-collapse" id="topNavbar">
+						<ul class="nav navbar-nav ml-auto tabmobile-center me-lg-3">
+							<li class="nav-item dropdown" id="usernameArea">
+								<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								id="username"
+								>USERNAME
+								<span><img src="../images/SARITORY.png" width="50" alt="" /></span>
+								</a>
+								
+								<ul class="dropdown-menu tabmobile-center" id="topNavbar__dropdown">
+								<li><a class="dropdown-item" href="#">Profile</a></li>
+								<li><a class="dropdown-item" href="#">Settings</a></li>
+								<hr />
+								<li id="logout"><a class="dropdown-item" href="#">Logout</a></li>
+								</ul>
+							</li>
+			
+							<!--
+							<li class="nav-item">
+								<a class="nav-link" href="#">Page</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Page</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Page</a>
+							</li> -->
+						</ul>
+					</div>
+				</div>
+		  	</nav>
   
-			  <div class="collapse navbar-collapse" id="topNavbar">
-				<ul class="nav navbar-nav ml-auto tabmobile-center me-lg-3">
-				  <li class="nav-item dropdown" id="usernameArea">
-					<a
-					  class="nav-link dropdown-toggle"
-					  href="#"
-					  role="button"
-					  data-bs-toggle="dropdown"
-					  id="username"
-					  >USERNAME
-					  <span><img src="../images/SARITORY.png" width="50" alt="" /></span>
-					  </a>
-					  
-					<ul class="dropdown-menu tabmobile-center" id="topNavbar__dropdown">
-					  <li><a class="dropdown-item" href="#">Profile</a></li>
-					  <li><a class="dropdown-item" href="#">Settings</a></li>
-					  <hr />
-					  <li id="logout"><a class="dropdown-item" href="#">Logout</a></li>
-					</ul>
-				  </li>
-  
-				  <!--
-				  <li class="nav-item">
-					<a class="nav-link" href="#">Page</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">Page</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">Page</a>
-				  </li> -->
-				</ul>
-			  </div>
-			</div>
-		  </nav>
-  
-		<p class="ms-3 breadcrumbs">Manage Items > Category Management</p>
+			<p class="ms-3 breadcrumbs">Manage Items > Category Management</p>
 
 
-		<div class="container">
-			<!-- ADD BUTTON -->
-			<div class="addCategory__container mb-3 d-flex justify-content-end">
-				<button type="button" class="btn btn-primary" data-bs-toggle="modal" 
-				data-bs-target="#addCategoryModal" id="addCategoryBtn"><i class="fa-solid fa-plus me-2"></i>ADD CATEGORY</button>
+			<div class="container">
+				<!-- ADD BUTTON -->
+				<div class="addCategory__container mb-3 d-flex justify-content-end">
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" 
+					data-bs-target="#addCategoryModal" id="addCategoryBtn"><i class="fa-solid fa-plus me-2"></i>ADD CATEGORY</button>
 
-				<div class="modal fade" id="addCategoryModal" tabindex="-1" aria-labelledby="addCategoryModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h1 class="modal-title fs-5" id="addCategoryModalLabel">ADD CATEGORY</h1>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							</div>
-							<div class="modal-body">
-								<form id="categoryForm">
-								<div class="mb-3">
-									<label for="categoryNameInput" class="col-form-label">Category Name:</label>
-									<input type="text" class="form-control" id="categoryNameInput">
-									<div class="invalid-feedback" id="category-error">
-										Category must not be empty.
-									</div>
+					<div class="modal fade" id="addCategoryModal" tabindex="-1" aria-labelledby="addCategoryModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h1 class="modal-title fs-5" id="addCategoryModalLabel">ADD CATEGORY</h1>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
-								</form>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="categoryCancelButton">CANCEL</button>
-								<button type="button" class="btn btn-primary" id="categorySaveButton">SAVE</button>
-								<button type="button" class="btn btn-primary" id="categoryUpdateButton">UPDATE</button>
+								<div class="modal-body">
+									<form id="categoryForm">
+									<div class="mb-3">
+										<label for="categoryNameInput" class="col-form-label">Category Name:</label>
+										<input type="text" class="form-control" id="categoryNameInput">
+										<div class="invalid-feedback" id="category-error">
+											Category must not be empty.
+										</div>
+									</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="categoryCancelButton">CANCEL</button>
+									<button type="button" class="btn btn-primary" id="categorySaveButton">SAVE</button>
+									<button type="button" class="btn btn-primary" id="categoryUpdateButton">UPDATE</button>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<!-- TABLE -->
-			<div class="row">
-			  <div class="col-12">
-				<table class="table table-bordered">
-				  <thead class="bg-primary text-white">
-					<tr>
-					  <th scope="col">Category Name</th>
-					  <th scope="col" class="text-center">Actions</th>
-					</tr>
-				  </thead>
-				  <tbody id="category__tbody">
-					<!-- <tr>
-					  <td>Beverages</td>
-					  <td class="d-flex justify-content-center ">
-						<button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
-						<button type="button" class="btn btn-success mx-1"><i class="fas fa-edit"></i></button>
-					  	<button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
-					  </td>
-					</tr>
-					<tr>
-					  <td>Medical Products</td>
-					  <td class="d-flex justify-content-center ">
-						<button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
-						<button type="button" class="btn btn-success mx-1"><i class="fas fa-edit"></i></button>
-					  	<button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
-					  </td>
-					</tr>
-					<tr>
-					  <td>Bootstrap Flexbox Tutorial and Examples</td>
-					  <td class="d-flex justify-content-center ">
-						<button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
-						<button type="button" class="btn btn-success mx-1"><i class="fas fa-edit"></i></button>
-					  	<button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
-					  </td>
-					</tr>-->
-					<tr id="empty-category__display">
-						<td colspan="2" class="py-5">
-							<div class="empty-list"></div>
-								<i class="fas fa-inbox text-black-50 d-block text-center empty-list__icon"></i>
-								<p class="empty-list-desc d-block text-center text-black-50 empty-list__description">Category List is empty</p>
-							</div>
-						</td>
-					</tr>
-					
-				  </tbody>
-				</table>
-			  </div>
+				<!-- TABLE -->
+				<div class="row">
+					<div class="col-12">
+						<table class="table table-bordered">
+							<thead class="bg-primary text-white">
+								<tr>
+								<th scope="col">Category Name</th>
+								<th scope="col" class="text-center">Actions</th>
+								</tr>
+							</thead>
+							<tbody id="category__tbody">
+								<tr id="empty-category__display">
+									<td colspan="2" class="py-5">
+										<div class="empty-list">
+											<i class="fas fa-inbox text-black-50 d-block text-center empty-list__icon"></i>
+											<p class="empty-list-desc d-block text-center text-black-50 empty-list__description">Category List is empty</p>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
-		  </div>
-
+		</div>
 	</div> <!--  END OF WRAPPER -->
 	
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

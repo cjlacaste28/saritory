@@ -112,98 +112,168 @@
   
 		<!-- Page Content  -->
 		<div id="content">
-		  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
-			  <button type="button" id="sidebarCollapse" class="btn btn-info">
-				<i class="fas fa-align-left"></i>
-				<!--  <span>Toggle Sidebar</span> -->
-			  </button>
-			  <button
-				class="btn d-inline-block d-lg-none ml-auto burgerMenu"
-				type="button"
-				data-bs-toggle="collapse"
-				data-bs-target="#topNavbar"
-				aria-controls="topNavbar"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			  >
-				<i class="fas fa-align-justify"></i>
-			  </button>
-  
-			  <div class="collapse navbar-collapse" id="topNavbar">
-				<ul class="nav navbar-nav ml-auto tabmobile-center me-lg-3">
-				  <li class="nav-item dropdown" id="usernameArea">
-					<a
-					  class="nav-link dropdown-toggle"
-					  href="#"
-					  role="button"
-					  data-bs-toggle="dropdown"
-					  id="username"
-					  >USERNAME
-					  <span><img src="../images/SARITORY.png" width="50" alt="" /></span>
-					  </a>
-					  
-					<ul class="dropdown-menu tabmobile-center" id="topNavbar__dropdown">
-					  <li><a class="dropdown-item" href="#">Profile</a></li>
-					  <li><a class="dropdown-item" href="#">Settings</a></li>
-					  <hr />
-					  <li id="logout"><a class="dropdown-item" href="#">Logout</a></li>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+				<button type="button" id="sidebarCollapse" class="btn btn-info">
+					<i class="fas fa-align-left"></i>
+					<!--  <span>Toggle Sidebar</span> -->
+				</button>
+				<button
+					class="btn d-inline-block d-lg-none ml-auto burgerMenu"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#topNavbar"
+					aria-controls="topNavbar"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<i class="fas fa-align-justify"></i>
+				</button>
+	
+				<div class="collapse navbar-collapse" id="topNavbar">
+					<ul class="nav navbar-nav ml-auto tabmobile-center me-lg-3">
+					<li class="nav-item dropdown" id="usernameArea">
+						<a
+						class="nav-link dropdown-toggle"
+						href="#"
+						role="button"
+						data-bs-toggle="dropdown"
+						id="username"
+						>USERNAME
+						<span><img src="../images/SARITORY.png" width="50" alt="" /></span>
+						</a>
+						
+						<ul class="dropdown-menu tabmobile-center" id="topNavbar__dropdown">
+						<li><a class="dropdown-item" href="#">Profile</a></li>
+						<li><a class="dropdown-item" href="#">Settings</a></li>
+						<hr />
+						<li id="logout"><a class="dropdown-item" href="#">Logout</a></li>
+						</ul>
+					</li>
+	
+					<!--
+					<li class="nav-item">
+						<a class="nav-link" href="#">Page</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Page</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Page</a>
+					</li> -->
 					</ul>
-				  </li>
-  
-				  <!--
-				  <li class="nav-item">
-					<a class="nav-link" href="#">Page</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">Page</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">Page</a>
-				  </li> -->
-				</ul>
-			  </div>
-			</div>
-		  </nav>
-  
-		  <p class="ms-3 breadcrumbs">Manage Items > Items Management</p>
+				</div>
+				</div>
+			</nav>
+	
+			<p class="ms-3 breadcrumbs">Manage Items > Items Management</p>
 
-		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal" data-bs-whatever="@mdo">ADD PRODUCT</button>
+			<div class="container">
+				<!-- ADD BUTTON -->
+				<div class="addProduct__container mb-3 d-flex justify-content-end">
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" 
+					data-bs-target="#addProductModal" id="addProductBtn"><i class="fa-solid fa-plus me-2"></i>ADD NEW PRODUCT</button>
 
+					<div class="modal fade" id="addProductModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h1 class="modal-title fs-5" id="addProductModalLabel">ADD PRODUCT</h1>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<form id="productForm" class="">
+										<div class="mt-2">
+											<label for="productNameInput" class="form-label">Product</label>
+											<input type="text" class="form-control" id="productNameInput" aria-describedby="productNameInputFeedback" required>
+											<div id="productNameInputFeedback" class="invalid-feedback">
+											  Product Name is required
+											</div>
+										</div>
 
-		<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-			<div class="modal-header">
-				<h1 class="modal-title fs-5" id="addModalLabel">ADD PRODUCT</h1>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-			<div class="modal-body">
-				<form>
-				<div class="mb-3">
-					<label for="productNameInput" class="col-form-label">Product Name:</label>
-					<input type="text" class="form-control" id="productNameInput">
+										<div class="mt-2">
+											<label for="productSelectCategory" class="col-form-label">Category:</label>
+											<select class="form-select" required aria-label="select example" id="productSelectCategory">
+											  <option disabled selected value="">Open to choose category</option>
+											</select>
+											<div class="invalid-feedback" id="prodCategory-error1">
+												Please Select Category
+											</div>
+											<div class="invalid-feedback" id="prodCategory-error2">
+												Please add category <a href="category-management.html">here</a>
+											</div>
+										</div>
+
+										<div class="mt-2">
+											<label for="productPriceInput" class="form-label">Price:</label>
+											<input type="number" class="form-control" id="productPriceInput" aria-describedby="productPriceInputFeedback"  type='number' step='0.01'  placeholder='0.00' min="0.01" required>
+											<div id="productPriceInputFeedback" class="invalid-feedback">
+											  Product Price must not be empty or 0
+											</div>
+										</div>
+
+										<div class="mt-2">
+											<label for="productQuantityInput" class="form-label">Quantity:</label>
+											<input type="number" class="form-control" id="productQuantityInput" aria-describedby="productQuantityInputFeedback" min="1" required>
+											<div id="productQuantityInputFeedback" class="invalid-feedback">
+											  Product Quantity must not be empty or 0
+											</div>
+										</div>
+
+										<div class="mt-2">
+											<label for="productExpirationInput" class="form-label">Expiration (Optional):</label>
+											<input type="date" class="form-control" id="productExpirationInput" aria-describedby="productExpirationInputFeedback">
+										</div>
+									
+										<div class="mt-2">
+											<label for="productImageInput" class="col-form-label">Image (Optional):</label>
+											<input type="file" class="form-control" onchange="getProductImage();" aria-label="file example" accept="image/*" id="productImageInput"/>
+										</div>
+									</form>
+									<div id="showProductImage"></div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="productCancelButton">CANCEL</button>
+									<button type="button" class="btn btn-primary" id="productSaveButton">SAVE</button>
+									<button type="button" class="btn btn-primary" id="productUpdateButton">UPDATE</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="mb-3">
-					<label for="productPriceInput" class="col-form-label">Price:</label>
-					<input type="text" class="form-control" id="productPriceInput">
+
+				<!-- TABLE -->
+				<div class="productTable__container overflow-auto">
+					<div class="col-12">
+						<table class="table table-bordered" style="table-layout: auto;">
+							<thead class="bg-primary text-white">
+								<tr>
+									<th scope="col" class="text-center">Image</th>
+									<th scope="col">Product</th>
+									<th scope="col">Category</th>
+									<th scope="col">Price</th>
+									<th scope="col">Quantity</th>
+									<th scope="col">Total Price</th>
+									<th scope="col">Expiration</th>
+									<th scope="col" class="text-center">Actions</th>
+								</tr>
+								
+							</thead>
+							<tbody id="product__tbody">
+								<!-- DISPLAY PRODUCT LIST HERE -->
+								<tr id="empty-product__display">
+									<td colspan="8" class="py-5">
+										<div class="empty-list">
+											<i class="fas fa-inbox text-black-50 d-block text-center empty-list__icon"></i>
+											<p class="empty-list-desc d-block text-center text-black-50 empty-list__description">Product List is empty</p>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
-				<div class="mb-3">
-					<label for="productQuantitynput" class="col-form-label">Quantity:</label>
-					<input type="text" class="form-control" id="productQuantitynput">
-				</div>
-				<div class="mb-3">
-					<label for="productExpirationInput" class="col-form-label">Expiration:</label>
-					<input type="date" class="form-control" id="productExpirationInput">
-				</div>
-				</form>
 			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCEL</button>
-				<button type="button" class="btn btn-primary">SAVE</button>
-			</div>
-			</div>
-		</div>
 		</div>
 	</div>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -219,7 +289,8 @@
     <!-- SWEET ALERT 2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/2.0.0-alpha0/date_fns.js"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/luxon@3.1.0/build/global/luxon.min.js"></script>
-	<script src="../js/dashboard.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/luxon@3.1.0/build/global/luxon.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.1.0/luxon.js" integrity="sha512-mas9jHaog0obTpZqUHzxPlmPTwwP5clx2UJbdx+DxsCTy8l00hQjzMiJh9lSsqz8dcWSo3MKFZ3icgacn/0Naw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="../js/item-management.js"></script>
 </body>
 </html>

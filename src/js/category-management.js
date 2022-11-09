@@ -196,6 +196,7 @@ $(document).ready(function () {
 
 //category add mode
 const addCategoryMode = () => {
+	categoryElement.value = '';
 	categoryElement.disabled = false;
     categoryUpdateBtn.classList.add('d-none');
     categorySaveBtn.classList.remove('d-none');
@@ -232,7 +233,7 @@ const deleteCategoryMode = (id) => {
             }
             Swal.fire(
                 'Deleted!',
-                'Goal record has been deleted.',
+                'Category has been deleted.',
                 'success'
             ).then((result) => {
 				location.reload();

@@ -168,6 +168,40 @@
 		  </nav>
   
 		  <p class="ms-3 breadcrumbs">Manage Items > Expiring Items</p>
+
+		  <div class="container pt-4">
+			<p class="text-danger">Note: The list displays items that will expire within 30days</p>
+			<!-- TABLE -->
+			<div class="productTable__container overflow-auto">
+				<div class="col-12">
+					<table class="table table-bordered" style="table-layout: auto;">
+						<thead class="bg-primary text-white">
+							<tr>
+								<th scope="col" class="text-center">Image</th>
+								<th scope="col" class="text-center">Product</th>
+								<th scope="col" class="text-center">Category</th>
+								<th scope="col" class="text-center">Price</th>
+								<th scope="col" class="text-center">Quantity</th>
+								<th scope="col" class="text-center">Total Price</th>
+								<th scope="col" class="text-center">Expiration</th>
+							</tr>
+							
+						</thead>
+						<tbody id="product__tbody">
+							<!-- DISPLAY PRODUCT LIST HERE -->
+							<tr id="empty-product__display">
+								<td colspan="7" class="py-5">
+									<div class="empty-list">
+										<i class="fas fa-inbox text-black-50 d-block text-center empty-list__icon"></i>
+										<p class="empty-list-desc d-block text-center text-black-50 empty-list__description">Expiring Product List is empty</p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -183,6 +217,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/2.0.0-alpha0/date_fns.js"></script> -->
 	<script src="https://cdn.jsdelivr.net/npm/luxon@3.1.0/build/global/luxon.min.js"></script>
-	<script src="../js/dashboard.js"></script>
+	<script src="../js/expiring-items.js"></script>
 </body>
 </html>

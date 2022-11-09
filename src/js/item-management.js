@@ -362,7 +362,10 @@ const viewProductMode = (id) => {
 
 const getCategoryName = (categoryID) => {
 	const categoryVal = category.filter(el => el.id == categoryID).value();
-	return categoryVal[0].category;
+	console.log(categoryVal);
+	if(categoryVal.length > 0){
+		return categoryVal[0].category
+	}else return '-';
 }
 
 //get image and save to sessionStorage

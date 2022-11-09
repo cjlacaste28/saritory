@@ -93,7 +93,6 @@ categorySaveBtn.addEventListener('click', () => {
 categoryUpdateBtn.addEventListener('click', () => {
 	const categoryObj = updateCategoryInputCheck(currIdForUpdate)
     if (categoryObj.isSuccess) {
-		console.log(`this is from update inputcheck ${categoryObj.updatedCategoryVal} id: ${currIdForUpdate}`)
         updateCategory(currIdForUpdate, categoryObj.updatedCategoryVal)
 		categoryModal.classList.remove("show")
         Swal.fire(
@@ -117,7 +116,6 @@ categoryCancelBtn.addEventListener('click', () => {
 const addCategoryInputCheck = () => {
 	const categoryVal = categoryElement.value.trim();
 	let ctr = 0;
-	console.log(categoryVal);
 	if (categoryVal === '') {
 		categoryElement.classList.add("is-invalid")
 		ctr++;
@@ -147,8 +145,6 @@ const addCategoryInputCheck = () => {
 const updateCategoryInputCheck = (id) => {
 	const categoryVal = categoryElement.value.trim();
 	let ctr = 0;
-	console.log(id);
-	console.log(`val: ${categoryVal} id: ${id}`);
 	if (categoryVal === '') {
 		categoryElement.classList.add("is-invalid")
 		ctr++;

@@ -95,7 +95,6 @@ function getDateInterval(expirationDate){
 
 const getCategoryName = (categoryID) => {
 	const categoryVal = category.filter(el => el.id == categoryID).value();
-	console.log(categoryVal);
 	const result = (categoryVal.length > 0)? categoryVal[0].category : '-';
 	return result;
 }

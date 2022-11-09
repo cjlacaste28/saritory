@@ -87,14 +87,12 @@ logoutBtn.addEventListener('click', () => {
 
 //ADD PRODUCT BUTTON
 addProductBtn.addEventListener('click', () => {
-	console.log(`Add Product button was clicked`);
 	addProductMode();
 });
 
 //SAVE PRODUCT BUTTON
 productSaveBtn.addEventListener('click', () => {
 	const productObj = addProductInputCheck()
-	console.log(productObj.data);
     if (productObj.isSuccess) {
         addProduct(productObj.data)
 		productModal.classList.remove("show")
@@ -362,7 +360,6 @@ const viewProductMode = (id) => {
 
 const getCategoryName = (categoryID) => {
 	const categoryVal = category.filter(el => el.id == categoryID).value();
-	console.log(categoryVal);
 	if(categoryVal.length > 0){
 		return categoryVal[0].category
 	}else return '-';
@@ -398,9 +395,6 @@ const loadCategory = (list, selectArea) => {
 const loadProducts = (list, selectArea) => { 
 	list.forEach(element => {
 		const totalPrice = parseFloat(element.price) * parseFloat(element.quantity_current)
-		// const categoryID = element.category;
-		//gets the category name from local storage using cotegoryID
-		// const categoryVal = category.filter(el => el.id == categoryID).value();
 		//checks if expiration date is empty or not
 		const ExpirationVal = (element.expiration)? DateTime.fromISO(element.expiration).toLocaleString(DateTime.DATE_MED) : '';
 		const imageVal = (element.image)? element.image : `https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930`;

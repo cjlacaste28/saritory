@@ -75,6 +75,8 @@ logoutBtn.addEventListener('click', () => {
 
 
 /*****************  UTILITY FUNCTION  ******************/
+//remove data from currLogin and back to login page
+const logout = () => currLogin.remove({ username: usernameValue }).write();
 
 $(document).ready(function () {
     $('#sidebarCollapse').on('click', function () {

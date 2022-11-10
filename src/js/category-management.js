@@ -2,7 +2,8 @@
 let adapter = new LocalStorage("SaritoryDB");
 let SaritoryDB = low(adapter);
 
-const baseurl = `${window.location.origin}/saritory`;
+const baseurl = window.location.origin;
+// const baseurl = `${window.location.origin}/saritory`;
 const usersDB = SaritoryDB.get('users');
 const currLogin = SaritoryDB.get('currLogin');
 const category = SaritoryDB.get('category');

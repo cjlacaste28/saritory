@@ -6,7 +6,8 @@ let SaritoryDB = low(adapter);
 const DateTime = luxon.DateTime;
 
 //baseurl setup
-const baseurl = `${window.location.origin}/saritory`;
+const baseurl = window.location.origin;
+// const baseurl = `${window.location.origin}/saritory`;
 
 // getting tables from local storage
 const usersDB = SaritoryDB.get('users');

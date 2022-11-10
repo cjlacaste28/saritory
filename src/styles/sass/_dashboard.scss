@@ -1,5 +1,5 @@
 
-.navbar {
+.dashboard .navbar {
     padding: 15px 10px;
     background: #f5f5f4;
     border: none;
@@ -8,7 +8,7 @@
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-btn {
+.dashboard .navbar-btn {
     box-shadow: none;
     outline: none !important;
     border: none;
@@ -247,6 +247,62 @@ a.otherlink2:hover {
 .tabmobile-center{
 	text-align:center !important;
 }
+
+//////////////// CARDS
+
+#cardFeatures {
+    justify-content: center;
+
+}
+
+#cardFeatures .card {
+    border-left: 12px solid #0082fc;
+    box-shadow: 1px 1px 2px rgb(198, 198, 198);
+}
+
+#cardFeatures .card:hover {
+    border-left: 12px solid #ff914d;
+    box-shadow: 1px 1px 2px rgb(104, 104, 104);
+}
+
+#cardFeatures a {
+    background: none;
+    border: none;
+    color: #0082fc;
+    text-align: right;
+}
+
+#cardFeatures a:hover {
+    color: #ff914d;
+
+}
+
+#cardFeatures h1 {
+    font-size: 20px;
+    color: #0062be;
+    font-weight: bold;
+}
+
+#cardFeatures p {
+    font-size: 15px;
+    margin: 0%;
+}
+
+#cardFeatures span {
+    float: right;
+}
+
+#cardFeatures .cardp {
+    font-size: 40px;
+}
+
+.cardNumber{
+    font-size: 28px !important;
+    color: #5a5c69;
+    font-weight: bold;
+}
+
+
 
 
 

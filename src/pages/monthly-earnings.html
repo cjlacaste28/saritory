@@ -44,44 +44,44 @@
 		<nav id="sidebar">
 			<div class="sidebar-header">
 			  <a class="sidebar-brand" href=""
-				><img src="../images/SARITORY_with_text_v2.png" width="200" alt=""
+				><img src="../images/SARITORY_with_text_v2.png" width="200" alt="logo2"
 			  /></a>
-			  <!--  <h3>Bootstrap Sidebar</h3> -->
 			</div>
-	
+			<!-- SIDEBAR LINKS -->
 			<ul class="list-unstyled components">
 			  <span id="storeName">Name of Store</span>
 			  <li id="sideMenuDashboard">
-				  <a href="dashboard.html">Dashboard</a>
+				  <a href="./dashboard.html">Dashboard</a>
 			  </li>
 			  <hr>
-			  <li id="sideMenuSellerArea">
-				  <a href="seller-area.html">Seller Area</a>
-			  </li>
 			  <li class="sideMenuDropdown" id="sideMenuManageItems">
 				<a
 					data-bs-toggle="collapse"
-				  href="#inventorySubmenu"
-				  aria-expanded="false"
-				  arial-controls="inventorySubmenu"
-				  class="dropdown-toggle"
-				  ><span class="beforeIcon"></span>Manage Items</a
+				href="#inventorySubmenu"
+				aria-expanded="false"
+				arial-controls="inventorySubmenu"
+				class="dropdown-toggle"
+				><span class="beforeIcon"></span>Manage Items</a
 				>
 				<ul class="collapse list-unstyled" id="inventorySubmenu">
-				  <li>
-					  <a href="category-management.html">Category Management</a>
-				  </li>
-				  <li>
-					<a href="item-management.html">Items Management</a>
-				  </li>
-				  <li>
-					<a href="top-products.html">Top Products</a>
-				  </li>
-				  <li>
-					<a href="expiring-items.html">Expiring Items</a>
-				  </li>
+				<li>
+					<a href="./category-management.html">Category Management</a>
+				</li>
+				<li>
+					<a href="./item-management.html">Items Management</a>
+				</li>
+				<li>
+					<a href="./expiring-items.html">Expiring Items</a>
+				</li>
+				<li>
+					<a href="./top-products.html">Top Products</a>
+				</li>
 				</ul>
+			</li>
+			  <li id="sideMenuSellerArea">
+				  <a href="./seller-area.html">Seller Area</a>
 			  </li>
+
 			  <li class="sideMenuDropdown" id="sideMenuEarnings">
 				<a
 					data-bs-toggle="collapse"
@@ -89,27 +89,18 @@
 				  aria-expanded="false"
 				  arial-controls="salesSubmenu"
 				  class="dropdown-toggle"
-				  ><span class="beforeIcon"></span>Earnings</a
+				  ><span class="beforeIcon"></span>Sales</a
 				>
 				<ul class="collapse list-unstyled" id="salesSubmenu">
 				  <li>
-					<a href="transaction.html">Todays Transaction</a>
+					<a href="./transaction.html">Todays Transaction</a>
 				  </li>
 				  <li>
-					<a href="monthly-earnings.html">Monthly Earnings</a>
+					<a href="./monthly-earnings.html">Monthly Sales</a>
 				  </li>
 				</ul>
 			  </li>
 			</ul>
-	
-			<!-- <ul class="list-unstyled CTAs">
-			  <li>
-				<a href="" class="otherlink1">link1 </a>
-			  </li>
-			  <li>
-				<a href="" class="otherlink2">link 2</a>
-			  </li>
-			</ul> -->
 		  </nav>
   
 		<!-- Page Content  -->
@@ -169,6 +160,14 @@
 		  </nav>
   
 		  <p class="ms-3 breadcrumbs">Sales > Monthly Sales</p>
+
+		<!-- UNDERCONSTRUCTION NOTICE -->
+		<div class="container">
+			<div class="row flex-column align-items-center ">
+				<img src="../images/underconstruction-2.png" alt="underconstruction" style="width:450px" id="underconstruction__image">
+				<p class="text-center fw-bold fs-2" style="color:#0062BE">This Page is Under Construction</p>
+			</div>
+		</div>
 	</div>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

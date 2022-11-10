@@ -44,44 +44,44 @@
 		<nav id="sidebar">
 			<div class="sidebar-header">
 			  <a class="sidebar-brand" href=""
-				><img src="../images/SARITORY_with_text_v2.png" width="200" alt=""
+				><img src="../images/SARITORY_with_text_v2.png" width="200" alt="logo2"
 			  /></a>
-			  <!--  <h3>Bootstrap Sidebar</h3> -->
 			</div>
-	
+			<!-- SIDEBAR LINKS -->
 			<ul class="list-unstyled components">
 			  <span id="storeName">Name of Store</span>
 			  <li id="sideMenuDashboard">
-				  <a href="dashboard.html">Dashboard</a>
+				  <a href="./dashboard.html">Dashboard</a>
 			  </li>
 			  <hr>
-			  <li id="sideMenuSellerArea">
-				  <a href="seller-area.html">Seller Area</a>
-			  </li>
 			  <li class="sideMenuDropdown" id="sideMenuManageItems">
 				<a
 					data-bs-toggle="collapse"
-				  href="#inventorySubmenu"
-				  aria-expanded="false"
-				  arial-controls="inventorySubmenu"
-				  class="dropdown-toggle"
-				  ><span class="beforeIcon"></span>Manage Items</a
+				href="#inventorySubmenu"
+				aria-expanded="false"
+				arial-controls="inventorySubmenu"
+				class="dropdown-toggle"
+				><span class="beforeIcon"></span>Manage Items</a
 				>
 				<ul class="collapse list-unstyled" id="inventorySubmenu">
-				  <li>
-					  <a href="category-management.html">Category Management</a>
-				  </li>
-				  <li>
-					<a href="item-management.html">Items Management</a>
-				  </li>
-				  <li>
-					<a href="top-products.html">Top Products</a>
-				  </li>
-				  <li>
-					<a href="expiring-items.html">Expiring Items</a>
-				  </li>
+				<li>
+					<a href="./category-management.html">Category Management</a>
+				</li>
+				<li>
+					<a href="./item-management.html">Items Management</a>
+				</li>
+				<li>
+					<a href="./expiring-items.html">Expiring Items</a>
+				</li>
+				<li>
+					<a href="./top-products.html">Top Products</a>
+				</li>
 				</ul>
+			</li>
+			  <li id="sideMenuSellerArea">
+				  <a href="./seller-area.html">Seller Area</a>
 			  </li>
+
 			  <li class="sideMenuDropdown" id="sideMenuEarnings">
 				<a
 					data-bs-toggle="collapse"
@@ -89,27 +89,18 @@
 				  aria-expanded="false"
 				  arial-controls="salesSubmenu"
 				  class="dropdown-toggle"
-				  ><span class="beforeIcon"></span>Earnings</a
+				  ><span class="beforeIcon"></span>Sales</a
 				>
 				<ul class="collapse list-unstyled" id="salesSubmenu">
 				  <li>
-					<a href="transaction.html">Todays Transaction</a>
+					<a href="./transaction.html">Todays Transaction</a>
 				  </li>
 				  <li>
-					<a href="monthly-earnings.html">Monthly Earnings</a>
+					<a href="./monthly-earnings.html">Monthly Sales</a>
 				  </li>
 				</ul>
 			  </li>
 			</ul>
-	
-			<!-- <ul class="list-unstyled CTAs">
-			  <li>
-				<a href="" class="otherlink1">link1 </a>
-			  </li>
-			  <li>
-				<a href="" class="otherlink2">link 2</a>
-			  </li>
-			</ul> -->
 		  </nav>
   
 		<!-- Page Content  -->
@@ -152,23 +143,85 @@
 					  <li id="logout"><a class="dropdown-item" href="#">Logout</a></li>
 					</ul>
 				  </li>
-  
-				  <!--
-				  <li class="nav-item">
-					<a class="nav-link" href="#">Page</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">Page</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">Page</a>
-				  </li> -->
 				</ul>
 			  </div>
 			</div>
 		  </nav>
   
 		  <p class="ms-3 breadcrumbs">DASHBOARD</p>
+
+		<div class="container" id="cardFeatures">
+			<div class="row">
+				<!--COL1 card 1-->
+				<div class="card__item col-xl-4 col-md-6 col-sm-12 mt-3" id="card-item__categories">
+					<div class="card h-100 d-flex p-3 flex-column">
+						<h1 style="color:#36b9cc">
+							Total Categories <span><i class="fa-solid fa-rectangle-list"></i>&nbsp;&nbsp;</span>
+						</h1>
+						<p class="cardNumber" id="displayTotalCategory">0</p>
+						<a href="./category-management.html" class="btn mt-auto btn-primary fw-bold">View</a>
+					</div>
+				</div>
+		
+				<!--COL2 card 2-->
+				<div class="card__item col-xl-4 col-md-6 col-sm-12 mt-3" id="card-item__products">
+					<div class="card h-100 d-flex p-3 flex-column">
+						<h1 style="color:#1cc88a">
+							Total Items<span><i class="fa-solid fa-box-archive"></i>&nbsp;&nbsp;</span>
+						</h1>
+						<p class="cardNumber" id="displayTotalProduct">0</p>
+						<a href="./item-management.html" class="btn mt-auto btn-primary fw-bold">View</a>
+					</div>
+				</div>
+
+				<!--COL4 card 4-->
+				<div class="card__item col-xl-4 col-md-6 col-sm-12 mt-3" id="card-item__expiration">
+					<div class="card h-100 d-flex p-3 flex-column" >
+						<h1 style="color:#fa5041">
+							Expiring Items <span><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;&nbsp;</span>
+						</h1>
+						<p class="cardNumber" id="displayTotalExpiration">0</p>
+						<a href="./expiring-items.html" class="btn mt-auto btn-primary fw-bold" >View</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-5" id="dashboardProductDisplay">
+			<h3 class="text-primary fw-bold">LIST OF PRODUCTS</h3>
+			<!-- TABLE -->
+			<div class="productTable__container overflow-auto">
+				<div class="col-12">
+					<table class="table table-bordered" style="table-layout: auto;">
+						<thead class="bg-primary text-white">
+							<tr>
+								<th scope="col" class="text-center">Image</th>
+								<th scope="col" class="text-center">Product</th>
+								<th scope="col" class="text-center">Category</th>
+								<th scope="col" class="text-center">Price</th>
+								<th scope="col" class="text-center">Quantity</th>
+								<th scope="col" class="text-center">Total Price</th>
+								<th scope="col" class="text-center">Expiration</th>
+							</tr>
+							
+						</thead>
+						<tbody id="product__tbody">
+							<!-- DISPLAY PRODUCT LIST HERE -->
+							<tr id="empty-product__display">
+								<td colspan="7" class="py-5">
+									<div class="empty-list">
+										<i class="fas fa-inbox text-black-50 d-block text-center empty-list__icon"></i>
+										<p class="empty-list-desc d-block text-center text-black-50 empty-list__description">Product List is empty</p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+						
+
+		  
 	</div>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

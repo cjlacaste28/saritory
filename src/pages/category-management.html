@@ -40,75 +40,66 @@
 	<div class="wrapper">
 		<!-- Sidebar  -->
 		<nav id="sidebar">
-		  <div class="sidebar-header">
-			<a class="sidebar-brand" href=""
-			  ><img src="../images/SARITORY_with_text_v2.png" width="200" alt=""
-			/></a>
-			<!--  <h3>Bootstrap Sidebar</h3> -->
-		  </div>
-  
-		  <ul class="list-unstyled components">
-			<span id="storeName">Name of Store</span>
-			<li id="sideMenuDashboard">
-				<a href="dashboard.html">Dashboard</a>
-			</li>
-			<hr>
-			<li id="sideMenuSellerArea">
-				<a href="seller-area.html">Seller Area</a>
-			</li>
-			<li class="sideMenuDropdown" id="sideMenuManageItems">
-			  <a
-			  	data-bs-toggle="collapse"
+			<div class="sidebar-header">
+			  <a class="sidebar-brand" href=""
+				><img src="../images/SARITORY_with_text_v2.png" width="200" alt="logo2"
+			  /></a>
+			</div>
+			<!-- SIDEBAR LINKS -->
+			<ul class="list-unstyled components">
+			  <span id="storeName">Name of Store</span>
+			  <li id="sideMenuDashboard">
+				  <a href="./dashboard.html">Dashboard</a>
+			  </li>
+			  <hr>
+			  <li class="sideMenuDropdown" id="sideMenuManageItems">
+				<a
+					data-bs-toggle="collapse"
 				href="#inventorySubmenu"
 				aria-expanded="false"
 				arial-controls="inventorySubmenu"
 				class="dropdown-toggle"
 				><span class="beforeIcon"></span>Manage Items</a
-			  >
-			  <ul class="collapse list-unstyled" id="inventorySubmenu">
+				>
+				<ul class="collapse list-unstyled" id="inventorySubmenu">
 				<li>
-					<a href="category-management.html">Category Management</a>
+					<a href="./category-management.html">Category Management</a>
 				</li>
 				<li>
-				  <a href="item-management.html">Items Management</a>
+					<a href="./item-management.html">Items Management</a>
 				</li>
 				<li>
-				  <a href="top-products.html">Top Products</a>
+					<a href="./expiring-items.html">Expiring Items</a>
 				</li>
 				<li>
-				  <a href="expiring-items.html">Expiring Items</a>
+					<a href="./top-products.html">Top Products</a>
 				</li>
-			  </ul>
+				</ul>
 			</li>
-			<li class="sideMenuDropdown" id="sideMenuEarnings">
-			  <a
-			  	data-bs-toggle="collapse"
-				href="#salesSubmenu"
-				aria-expanded="false"
-				arial-controls="salesSubmenu"
-				class="dropdown-toggle"
-				><span class="beforeIcon"></span>Earnings</a
-			  >
-			  <ul class="collapse list-unstyled" id="salesSubmenu">
-				<li>
-				  <a href="transaction.html">Todays Transaction</a>
-				</li>
-				<li>
-				  <a href="monthly-earnings.html">Monthly Earnings</a>
-				</li>
-			  </ul>
-			</li>
-		  </ul>
-  
-		  <!-- <ul class="list-unstyled CTAs">
-			<li>
-			  <a href="" class="otherlink1">link1 </a>
-			</li>
-			<li>
-			  <a href="" class="otherlink2">link 2</a>
-			</li>
-		  </ul> -->
-		</nav>
+			  <li id="sideMenuSellerArea">
+				  <a href="./seller-area.html">Seller Area</a>
+			  </li>
+
+			  <li class="sideMenuDropdown" id="sideMenuEarnings">
+				<a
+					data-bs-toggle="collapse"
+				  href="#salesSubmenu"
+				  aria-expanded="false"
+				  arial-controls="salesSubmenu"
+				  class="dropdown-toggle"
+				  ><span class="beforeIcon"></span>Sales</a
+				>
+				<ul class="collapse list-unstyled" id="salesSubmenu">
+				  <li>
+					<a href="./transaction.html">Todays Transaction</a>
+				  </li>
+				  <li>
+					<a href="./monthly-earnings.html">Monthly Sales</a>
+				  </li>
+				</ul>
+			  </li>
+			</ul>
+		  </nav>
   
 		<!-- Page Content  -->
 		<div id="content">

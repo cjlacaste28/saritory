@@ -27,3 +27,9 @@
 	color: $primary-light;
 	font-size: 1.25rem;
 }
+
+@media (max-width:576px){
+	#underconstruction{
+		width: 100% !important;
+	}
+}

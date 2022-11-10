@@ -103,7 +103,7 @@ const getCategoryName = (categoryID) => {
 
 
 
- //set the products list on product modal
+ //set the products list on product table
 const loadProducts = (list, selectArea) => { 
 	list.forEach(element => {
 		const totalPrice = parseFloat(element.price) * parseFloat(element.quantity_current)

@@ -39,7 +39,7 @@ function check_session() {
             showConfirmButton: false,
             timer: 1500
         }).then((result) => {
-            location.replace(`${baseurl}/src/pages/login-signup.html`);
+            location.replace(`${baseurl}/saritory/src/pages/login-signup.html`);
         })
     }
 }
@@ -80,7 +80,7 @@ logoutBtn.addEventListener('click', () => {
         'success'
     ).then((result) => {
         if (result.isConfirmed) {
-            location.replace(`${baseurl}/src/pages/login-signup.html`);
+            location.replace(`${baseurl}/saritory/src/pages/login-signup.html`);
         }
     })
 });

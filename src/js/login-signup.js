@@ -340,7 +340,7 @@ loginForm.addEventListener('submit', e => {
             console.log('testHere');
             console.log(`TEST1: ${baseurl}/src/pages/dashboard.html`);
             console.log(`TEST2: ${baseurl}saritory/src/pages/dashboard.html`);
-          location.replace(`${baseurl}saritory/src/pages/dashboard.html`);
+          location.replace(`${baseurl}/saritory/src/pages/dashboard.html`);
       })
   }
 });
@@ -490,7 +490,7 @@ function my_code() {
           showConfirmButton: false,
           timer: 3000
       }).then((result) => {
-          location.replace(`${baseurl}/src/pages/dashboard.html`);
+            location.replace(`${baseurl}/saritory/src/pages/dashboard.html`);
       })
   }
 }

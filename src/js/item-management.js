@@ -75,11 +75,13 @@ let currIdForUpdate = 0;
 /*****************  EVENT LISTENER  ******************/
 logoutBtn.addEventListener('click', () => {
     logout();
-    Swal.fire(
-        'Goodbye!',
-        'Logout Successful',
-        'success'
-    ).then((result) => {
+    Swal.fire({
+        title:'Goodbye!',
+        text:'Logout Successful',
+        icon:'success',
+		allowOutsideClick: false,
+		allowEscapeKey: false,
+	}).then((result) => {
         if (result.isConfirmed) {
             location.replace(`${baseurl}/saritory/src/pages/login-signup.html`);
         }
